@@ -6,8 +6,8 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gray-800">
-      <div className="flex items-center flex-shrink-0 mr-6 text-white">
+    <nav className="flex flex-wrap items-center justify-between p-6 mb-6SS">
+      <div className="flex items-center flex-shrink-0 mr-6">
         <span className="text-xl font-semibold tracking-tight">
           {siteTitle}
         </span>
@@ -15,7 +15,7 @@ function Header({ siteTitle }) {
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 border border-white rounded hover hover:border-white"
         >
           <svg
             className="w-3 h-3 fill-current"
@@ -36,13 +36,13 @@ function Header({ siteTitle }) {
           <Link
             to={`/`}
             href="#responsive-header"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+            className="block mt-4 mr-4 lg:inline-block lg:mt-0 hover"
           >
             Home
           </Link>
           <Link
             to={`/page-2`}
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
+            className="block mt-4 mr-4 lg:inline-block lg:mt-0 hover"
           >
             page 2
           </Link>
@@ -52,7 +52,7 @@ function Header({ siteTitle }) {
             href="https://github.com/kosvrouvas/gatsby-tailwindcss-starter"
             target="_blank"
             rel="noreferrer"
-            className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
+            className="inline-block px-4 py-2 mt-4 text-sm leading-none border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
           >
             Download
           </a>

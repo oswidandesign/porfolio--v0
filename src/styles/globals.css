@@ -15,3 +15,8 @@ a {
 
 @tailwind components;
 @tailwind utilities;
+
+nav { 
+
+  background-color: transparent;
+}
